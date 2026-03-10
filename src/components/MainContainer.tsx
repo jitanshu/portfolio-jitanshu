@@ -42,7 +42,7 @@ const MainContainer = ({ children }: PropsWithChildren) => {
             <About />
             <WhatIDo />
             <Career />
-            <Work />
+            {/* <Work /> */}
             {isDesktopView && (
               <Suspense fallback={<div>Loading....</div>}>
                 <TechStack />
