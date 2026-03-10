@@ -141,7 +141,7 @@ const WhatIDo = () => {
           </div>
           <div
             className="what-content what-noTouch"
-            ref={(el) => setRef(el, 1)}
+            ref={(el) => setRef(el, 2)}
           >
             <div className="what-border1">
               <svg height="100%">
