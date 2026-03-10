@@ -5,34 +5,34 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "Solid Starters",
-    category: "Low-Code Platform",
-    tools: "Angular, Next.js, NestJS, MongoDB",
-    image: "/images/Solidx.png",
+    title: "On-Demand Home Services Marketplace",
+    category: "On-Demand Services",
+    tools: "React Native, TypeScript, WebSockets, OTA",
+    image: "/images/homeowner.png",
   },
   {
-    title: "Radix",
+    title: "Live Video E-Commerce",
     category: "E-Commerce",
-    tools: "Angular, Next.js, NestJS, CMS",
-    image: "/images/radix.png",
+    tools: "React Native, WebRTC, WebSockets",
+    image: "/images/kiko.png",
   },
   {
-    title: "Bond Cancellation",
-    category: "Import-Export Automation",
-    tools: "Angular, Next.js, NestJS, Workflows",
-    image: "/images/bond.png",
+    title: "Logistics and Supply Chain Management",
+    category: "B2B Service",
+    tools: "React Native, JavaScript",
+    image: "/images/supplychain.png",
   },
   {
-    title: "Sapphire",
-    category: "CRM Platform",
-    tools: "AngularJS, NestJS, PostgreSQL",
-    image: "/images/sapphire.png",
+    title: "Map-Based Property Search App",
+    category: "Real Estate",
+    tools: "React Native, REST API, Google Maps",
+    image: "/images/realestate.png",
   },
   {
-    title: "Mpro",
-    category: "Insurance Platform",
-    tools: "React.js, Node.js, Microservices",
-    image: "/images/Maxlife.png",
+    title: "Claim Management App",
+    category: "Claim App",
+    tools: "React Native, Expo, EAS",
+    image: "/images/wkg.png",
   },
 ];
 
