@@ -20,7 +20,7 @@ const Contact = () => {
           <div className="contact-box">
             <h4>Social</h4>
             <a
-              href="https://github.com/raxx21"
+              href="https://github.com/jitanshu"
               target="_blank"
               data-cursor="disable"
               className="contact-social"
