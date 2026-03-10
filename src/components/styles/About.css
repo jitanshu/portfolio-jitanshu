@@ -25,7 +25,8 @@
 
 .about-me p {
   font-size: 33px;
-  font-weight: 600;
+  font-weight: 400;
+  text-align: center;
   line-height: 36px;
   letter-spacing: 1px;
 }
