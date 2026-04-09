@@ -8,31 +8,37 @@ const projects = [
     title: "On-Demand Home Services Marketplace",
     category: "On-Demand Services",
     tools: "React Native, TypeScript, WebSockets, OTA",
-    image: "/images/homeowner.png",
+    images: ["/images/homeowner.png"],
   },
   {
     title: "Live Video E-Commerce",
     category: "E-Commerce",
     tools: "React Native, WebRTC, WebSockets",
-    image: "/images/kiko.png",
+    images: ["/images/kiko.png"],
   },
   {
     title: "Logistics and Supply Chain Management",
     category: "B2B Service",
     tools: "React Native, JavaScript",
-    image: "/images/supplychain.png",
+    images: [
+      "/images/tc1.jpg",
+      "/images/tc2.jpg",
+      "/images/tc3.jpg",
+      "/images/tc4.jpg",
+      "/images/tc5.jpg",
+    ],
   },
   {
     title: "Map-Based Property Search App",
     category: "Real Estate",
     tools: "React Native, REST API, Google Maps",
-    image: "/images/realestate.png",
+    images: ["/images/realestate.png"],
   },
   {
     title: "Claim Management App",
     category: "Claim App",
     tools: "React Native, Expo, EAS",
-    image: "/images/wkg.png",
+    images: ["/images/wkg.png"],
   },
 ];
 
@@ -115,7 +121,33 @@ const Work = () => {
                       </div>
                     </div>
                     <div className="carousel-image-wrapper">
-                      <WorkImage image={project.image} alt={project.title} />
+                     <div
+    style={{
+      position: "relative",
+      width: "100%",
+      height: "300px",
+    }}
+  >
+    {project.images.map((img, i) => (
+      <WorkImage
+        key={i}
+        image={img}
+        alt={`${project.title}-${i}`}
+        style={{
+          position: "absolute",
+          width: "70%",
+          borderRadius: "16px",
+          boxShadow: "0 10px 30px rgba(0,0,0,0.15)",
+          transition: "transform 0.3s ease",
+
+          // stacking positions 👇
+          top: `${i * 20}px`,
+          left: `${i * 40}px`,
+          zIndex: 10 - i,
+        }}
+      />
+    ))}
+  </div>
                     </div>
                   </div>
                 </div>
