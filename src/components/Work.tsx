@@ -121,33 +121,19 @@ const Work = () => {
                       </div>
                     </div>
                     <div className="carousel-image-wrapper">
-                     <div
-    style={{
-      position: "relative",
-      width: "100%",
-      height: "300px",
-    }}
-  >
+                   <div className="carousel-image-wrapper">
+  <div className="image-stack">
     {project.images.map((img, i) => (
       <WorkImage
         key={i}
         image={img}
         alt={`${project.title}-${i}`}
-        style={{
-          position: "absolute",
-          width: "70%",
-          borderRadius: "16px",
-          boxShadow: "0 10px 30px rgba(0,0,0,0.15)",
-          transition: "transform 0.3s ease",
-
-          // stacking positions 👇
-          top: `${i * 20}px`,
-          left: `${i * 40}px`,
-          zIndex: 10 - i,
-        }}
+        className={`stack-img stack-${i}`}
       />
     ))}
   </div>
+</div>
+                      
                     </div>
                   </div>
                 </div>
