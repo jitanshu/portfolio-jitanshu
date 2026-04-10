@@ -6,13 +6,11 @@ interface Props {
   alt?: string;
   video?: string;
   link?: string;
-  className?: string;
 }
 
 const WorkImage = (props: Props) => {
   const [isVideo, setIsVideo] = useState(false);
   const [video, setVideo] = useState("");
-
   const handleMouseEnter = async () => {
     if (props.video) {
       setIsVideo(true);
@@ -24,25 +22,22 @@ const WorkImage = (props: Props) => {
   };
 
   return (
-    <div className={`work-image ${props.className || ""}`}>
+    <div className="work-image">
       <a
         className="work-image-in"
         href={props.link}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={() => setIsVideo(false)}
         target="_blank"
+        data-cursor={"disable"}
       >
         {props.link && (
           <div className="work-link">
             <MdArrowOutward />
           </div>
         )}
-
         <img src={props.image} alt={props.alt} />
-
-        {isVideo && (
-          <video src={video} autoPlay muted playsInline loop></video>
-        )}
+        {isVideo && <video src={video} autoPlay muted playsInline loop></video>}
       </a>
     </div>
   );

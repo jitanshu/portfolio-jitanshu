@@ -8,37 +8,31 @@ const projects = [
     title: "On-Demand Home Services Marketplace",
     category: "On-Demand Services",
     tools: "React Native, TypeScript, WebSockets, OTA",
-    images: ["/images/homeowner.png"],
+    image: "/images/homeowner.png",
   },
   {
     title: "Live Video E-Commerce",
     category: "E-Commerce",
     tools: "React Native, WebRTC, WebSockets",
-    images: ["/images/kiko.png"],
+    image: "/images/kiko.png",
   },
   {
     title: "Logistics and Supply Chain Management",
     category: "B2B Service",
     tools: "React Native, JavaScript",
-    images: [
-      "/images/tc1.jpg",
-      "/images/tc2.jpg",
-      "/images/tc3.jpg",
-      "/images/tc4.jpg",
-      "/images/tc5.jpg",
-    ],
+    image: "/images/supplychain.png",
   },
   {
     title: "Map-Based Property Search App",
     category: "Real Estate",
     tools: "React Native, REST API, Google Maps",
-    images: ["/images/realestate.png"],
+    image: "/images/realestate.png",
   },
   {
     title: "Claim Management App",
     category: "Claim App",
     tools: "React Native, Expo, EAS",
-    images: ["/images/wkg.png"],
+    image: "/images/wkg.png",
   },
 ];
 
@@ -121,19 +115,7 @@ const Work = () => {
                       </div>
                     </div>
                     <div className="carousel-image-wrapper">
-                   <div className="carousel-image-wrapper">
-  <div className="image-stack">
-    {project.images.map((img, i) => (
-      <WorkImage
-        key={i}
-        image={img}
-        alt={`${project.title}-${i}`}
-        className={`stack-img stack-${i}`}
-      />
-    ))}
-  </div>
-</div>
-                      
+                      <WorkImage image={project.image} alt={project.title} />
                     </div>
                   </div>
                 </div>
